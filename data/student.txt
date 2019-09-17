@@ -1,4 +1,4 @@
-# Attributes for both student-mat.csv (Math course) 
+# Attributes for student-mat.csv
 1 school - student's school (binary: "GP" - Gabriel Pereira or "MS" - Mousinho da Silveira)
 2 sex - student's sex (binary: "F" - female or "M" - male)
 3 age - student's age (numeric: from 15 to 22)
@@ -16,7 +16,7 @@
 15 failures - number of past class failures (numeric: n if 1<=n<3, else 4)
 16 schoolsup - extra educational support (binary: yes or no)
 17 famsup - family educational support (binary: yes or no)
-18 paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)
+18 paid - extra paid classes within the course subject (binary: yes or no)
 19 activities - extra-curricular activities (binary: yes or no)
 20 nursery - attended nursery school (binary: yes or no)
 21 higher - wants to take higher education (binary: yes or no)
@@ -30,11 +30,8 @@
 29 health - current health status (numeric: from 1 - very bad to 5 - very good)
 30 absences - number of school absences (numeric: from 0 to 93)
 
-# these grades are related with the course subject, Math or Portuguese:
+# Grades 
 31 G1 - first period grade (numeric: from 0 to 20)
 31 G2 - second period grade (numeric: from 0 to 20)
 32 G3 - final grade (numeric: from 0 to 20, output target)
 
-Additional note: there are several (382) students that belong to both datasets . 
-These students can be identified by searching for identical attributes
-that characterize each student, as shown in the annexed R file.

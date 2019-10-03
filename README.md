@@ -10,6 +10,8 @@ You and your team have been given the historical dataset of CMU student performa
 
 ### Data and Code
 
-The **data** folder contains the raw dataset as a csv (this is an augmented version of the dataset [found here](https://archive.ics.uci.edu/ml/datasets/Student+Performance)). The student performance is determined by their grades (G1, G2, and G3). G3 is the final year grade and is the target performance metric. Grades are given on a scale of 0-20 where 20 is the best.
+The **data** folder contains the raw dataset as a csv (this is an augmented version of the dataset [found here](https://archive.ics.uci.edu/ml/datasets/Student+Performance)). The student performance is determined by their grades (G1, G2, and G3). G3 is the final year grade and is the target performance metric. Grades are given on a scale of 0-20 where 20 is the best. A quality student is one whos G3 grade is 15 or higher.
 
 There is an example flask api with docker file in the **dockerfile/apps** folder. Use this as a template to build and deploy the microservice. Use [this article](https://towardsdatascience.com/a-flask-api-for-serving-scikit-learn-models-c8bcdaa41daa) and [this repo](https://github.com/amirziai/sklearnflask/blob/master/main.py) as a resource to build and save a **sci-kit learn** model then deploy it using flask.
+
+The flask api uses argments from the query string; **age**, **health**, and **absences**. This can be expanded or replaced with a JSON request.
